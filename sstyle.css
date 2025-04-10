@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .grid-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #todo-input,
+  #todoDate {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .btn-todo {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00c6ff;
+    background-image: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-todo:hover {
+    transform: translateY(-2px);
+    background-image: linear-gradient(45deg, #00c6ff, #005bea);
+  }
+  
+  .todo-container {
+    margin-top: 25px;
+  }
+  
+  .todo-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .todo-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  .todo-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .todo-date {
+    font-size: 0.85rem;
+    color: #eee;
+    margin-top: 5px;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
